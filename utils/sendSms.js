@@ -2,9 +2,7 @@
 
 exports.sendSms = (name, otp, to) => {
   return new Promise((resolve, reject) => {
-    fetch(
-      "http://smsaccount.api.myoperator.biz/v1/createuserotp?api_key=6183a266-fb49-4759-b776-8ecd765e9fca"
-    )
+    fetch(process.env.MYOPERATORSTRING)
       .then((response) => {
         //handle response
         console.log(response);

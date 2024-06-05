@@ -5,8 +5,8 @@ exports.sendEmail = async (req, res) => {
 
   const org = "myqubator";
   const adminList = [
-    { address: "jitendrabakoria@askgalore.com", displayName: "" },
-    { address: "jameel.q@myqubator.com", displayName: "" },
+    { address: "jbworks2007@gmail.com", displayName: "" },
+    // { address: "jameel.q@myqubator.com", displayName: "" },
   ];
 
   const mailOptions = {
@@ -104,8 +104,8 @@ exports.sendShareInfoEmail = async (req, res) => {
 
   const org = "myqubator";
   const adminList = [
-    { address: "jitendrabakoria@askgalore.com", displayName: "" },
-    { address: "jameel.q@myqubator.com", displayName: "" },
+    { address: "jbworks2007@gmail.com", displayName: "" },
+    // { address: "jameel.q@myqubator.com", displayName: "" },
   ];
 
   const mailOptions = {

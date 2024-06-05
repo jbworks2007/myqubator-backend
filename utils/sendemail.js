@@ -1,9 +1,7 @@
 // const { client, sender, transporter } = require("./emailConfig");
 const { EmailClient } = require("@azure/communication-email");
 
-const connectionString =
-  "endpoint=https://ourth-comm-service.india.communication.azure.com/;accesskey=CMg9OKYhfHOgHvSp3TyqnzhDdZPQEe8wUt47p0B+/N4ZUXufdDDj1YNmanzhQmL62j5EFQTG83tJz81a/C4GIA==";
-const client = new EmailClient(connectionString);
+const client = new EmailClient(process.env.CONNECTIONSTRING);
 const sender = "DoNotReply@dd037ad3-513f-4ca4-b6ff-0aa5f2994be0.azurecomm.net";
 
 async function sendDynamicEmail(mailOptions) {
